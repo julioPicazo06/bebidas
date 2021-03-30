@@ -6,6 +6,8 @@ export const CategoriasContext = createContext()
 
 export const CategoriasProvider = (props) => {
 
+
+   
     const [categorias, setCategorias] = useState([])
 
     useEffect(() => {
