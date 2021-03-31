@@ -22,6 +22,7 @@ export const RecetasProvider = ({children}) => {
             const url = `https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=${nombre}&c=${categoria}`
             const res = await axios.get(url)
             setRecetas(res.data.drinks)
+            
         }
 
         obtenerRecetas()
